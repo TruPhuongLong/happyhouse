@@ -6,7 +6,7 @@ import routes from '../pages/router'
 
 export default ({className}) => {
     const loading = () => <div className="animated fadeIn pt-1 text-center">Loading...</div>
-//
+
     return (
         <div className={`${className}`} >
             <div style={{ minHeight: '100vh' }}>

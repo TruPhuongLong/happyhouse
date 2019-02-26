@@ -13,8 +13,7 @@ const Header = (props) => {
                 <h6>HAPPY HOUSE</h6>
             </div>
             <img src="/top_midasi.jpg" className={classes.img}/>
-            {/* <br /> */}
-            {/* <h6>{props.location.pathname}</h6> */}
+
         </div>
     )
 }
