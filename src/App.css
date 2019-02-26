@@ -1,11 +1,6 @@
-/*
-    DEMO STYLE
-*/
-
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
 body {
     font-family: 'Roboto', sans-serif;
-    /* background: url('./assets/bg.jpeg') */
 }
 
 :root {
@@ -14,4 +9,40 @@ body {
     --color-white-blur-dark: rgba(255, 255, 255, 0.2);
     --background-color-dark: rgba(24, 32, 44, 0.9);
     --color-blue-active: rgba(0, 0, 102, 1);
+    --navbar-height: 80px;
+}
+
+#sidebar {
+    transform: translateX(-500px);
+}
+
+#sidebar.active {
+    transform: translateX(0);
+}
+
+#content {
+    margin-left: 0;
+}
+
+#main {
+    margin-top: var(--navbar-height)
+}
+
+#navbar {
+    transform: translateY(0)
+}
+
+@media screen and (min-width: 768px) {
+    #sidebar {
+        transform: translateX(0);
+    }
+    #content {
+        margin-left: 250px;
+    }
+    #navbar {
+        transform: translateY(-500px)
+    }
+    #main {
+        margin-top: 0;
+    }
 }

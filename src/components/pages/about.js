@@ -22,7 +22,7 @@ export default () => {
             {
                 contents.map(({ name, content }, idx) => {
                     return (
-                        <p>{name} : {content}</p>
+                        <p key={idx}>{name} : {content}</p>
                     )
                 })
             }

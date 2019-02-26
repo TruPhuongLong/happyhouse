@@ -1,5 +1,5 @@
 import React from 'react'
-import $ from 'jquery'
+import { withRouter } from 'react-router-dom'
 
 import classes from './container1.module.css'
 
@@ -10,22 +10,14 @@ import {
 
 
 
-export default () => {
-    $(document).ready(function () {
-        $('#sidebarCollapse').on('click', function () {
-            $('#sidebar').toggleClass('active');
-            $(this).toggleClass('active');
-        });
-    });
+const Container = (props) => {
+    const { pathname } = props.location
     return (
-        <div className={`${classes.container}`}>
-            <Sidebar className={classes.sidebar}/>
-            <Content className={classes.content}/>
+        <div className={`${pathname === '/home' && classes.container}`}>
+            <Sidebar className={classes.sidebar} id="sidebar" />
+            <Content id="content" className={classes.content} />
         </div>
-
-        // <div >
-        //     <Sidebar  />
-        //     <Content  />
-        // </div>
     )
 }
+
+export default withRouter(Container)

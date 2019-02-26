@@ -1,0 +1,24 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: var(--background-color-dark); */
+    background-color: transparent;
+    height: var(--navbar-height);
+    position: fixed;
+    transition: transform 1s;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.img {
+    max-height: 100%;
+    width: auto;
+    /* object-fit: cover; */
+}
+
+.wraper {
+    height: fit-content;
+    background-color: yellowgreen;
+}

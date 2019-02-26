@@ -13,7 +13,7 @@ export default () => {
             {
                 contents.map(({content}, idx) => {
                     return (
-                        <p>{content}</p>
+                        <p key={idx}>{content}</p>
                     )
                 })
             }

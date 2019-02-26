@@ -24,14 +24,14 @@ export default class extends React.Component {
     }
 
     _onClick = (idx) => {
-        console.log(idx)
         this.setState({ activeItemIndex: idx })
+        $('#sidebar').toggleClass('active')
     }
 
     render() {
-        const { style, className } = this.props
+        const { style, className, id } = this.props
         return (
-            <div style={style} className={`${styles.sidebar} ${className}`} id="sidebar">
+            <div style={style} className={`${styles.sidebar} ${className}`} id={id}>
                 <div className={styles.sidebarHeader}>
                     <img src="logo-happy-house2.png" />
                 </div>
