@@ -1,0 +1,22 @@
+:root{
+    --width-elip: 100px;
+    --height-elip: 92px
+}
+
+.elip {
+    width: var(--width-elip);
+    height: var(--height-elip);
+    border-bottom-left-radius: 50% ;
+    border-bottom-right-radius: 50% ;
+    border-top-left-radius: 50% ;
+    border-top-right-radius: 50% ;
+    background-color: var(--background-color-dark);
+    color: var(--color-white);
+    font-weight: bolder;
+    text-align: center;
+    
+}
+
+.elip h6{
+    line-height: var(--height-elip);
+}

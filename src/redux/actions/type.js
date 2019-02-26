@@ -1,0 +1,1 @@
+export const LANGUAGE_SWITCH = "LANGUAGE_SWITCH"

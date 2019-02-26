@@ -1,0 +1,12 @@
+.wraper1{
+    width: fit-content;
+}
+
+.wraper2{
+    width: fit-content;
+    margin: auto;
+}
+
+.wraper3{
+    width: calc(var(--width-elip) * 2 + 50px);
+}

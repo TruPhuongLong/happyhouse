@@ -1,0 +1,16 @@
+.wraper1 {
+    /* margin-right: 20px; */
+}
+
+.wraper2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wraper2 img{
+    background-color: var(--background-color-dark);
+}
+
+.wraper3 {
+    text-align: right;
+}

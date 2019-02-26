@@ -1,0 +1,32 @@
+.sidebar {
+    background-color: var(--background-color-dark);
+    min-width: 250px;
+}
+
+.sidebarHeader {
+    padding-left: 20px;
+}
+
+.sidebarContent {}
+
+.item {
+    padding: 20px;
+    display: block;
+    color: var(--color-white-blur-light);
+}
+
+.itemActive {
+    color: var(--color-blue-active);
+    background-color: var(--background-color-dark);
+}
+
+.item i {
+    vertical-align: sub;
+    margin-right: 20px;
+}
+
+.item:hover {
+    text-decoration: none;
+    background-color: var(--background-color-dark);
+}
+
