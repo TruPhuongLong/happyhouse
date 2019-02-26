@@ -4,13 +4,13 @@
 }
 
 .sidebarHeader {
-    padding-left: 20px;
+    padding-left: var(--space);
 }
 
 .sidebarContent {}
 
 .item {
-    padding: 20px;
+    padding: var(--space);
     display: block;
     color: var(--color-white-blur-light);
 }
@@ -22,11 +22,15 @@
 
 .item i {
     vertical-align: sub;
-    margin-right: 20px;
+    margin-right: var(--space);
 }
 
 .item:hover {
     text-decoration: none;
     background-color: var(--background-color-dark);
+}
+
+.select{
+    margin: var(--space);
 }
 

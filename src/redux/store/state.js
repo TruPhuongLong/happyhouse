@@ -1,9 +1,9 @@
-const languages = ["VI", "EN", "JP"]
+const languages = ["VI", "JP"]
 
 export default {
     languageState: {
         languages,
-        currentIndex: null
+        currentIndex: 0
     }
     
 }

@@ -1,0 +1,9 @@
+.select{
+    padding: 10px 20px;
+    background-color: transparent;
+    color: var(--color-white-blur-light);
+}
+
+.select option{
+    background-color: var(--background-color-dark);
+}

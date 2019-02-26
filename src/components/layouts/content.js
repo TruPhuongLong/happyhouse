@@ -13,7 +13,7 @@ export default ({ className , id}) => {
         <div className={`${className}`} id={id} >
             <div style={{ minHeight: 'calc(100vh - 40px)' }}>
                 <Navbar id="navbar"/>
-                <div style={{ padding: '20px'}} id="main">
+                <div style={{ padding: 'var(--space)'}} id="main">
                     <Suspense fallback={loading()}>
                         <Switch>
                             {routes.map((route, idx) => {

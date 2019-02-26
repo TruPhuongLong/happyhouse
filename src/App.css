@@ -10,6 +10,7 @@ body {
     --background-color-dark: rgba(24, 32, 44, 0.9);
     --color-blue-active: rgba(0, 0, 102, 1);
     --navbar-height: 80px;
+    --space: 20px;
 }
 
 #sidebar {
@@ -32,6 +33,10 @@ body {
     transform: translateY(0)
 }
 
+#select{
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
     #sidebar {
         transform: translateX(0);
@@ -44,5 +49,8 @@ body {
     }
     #main {
         margin-top: 0;
+    }
+    #select{
+        display: inline-block;
     }
 }

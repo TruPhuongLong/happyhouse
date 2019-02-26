@@ -2,8 +2,9 @@ import React from 'react'
 import $ from 'jquery'
 import { Link } from 'react-router-dom'
 
-import styles from './sidebar.module.css'
+import classes from './sidebar.module.css'
 import Divider from '../normals/divider'
+import Select from '../normals/select'
 
 const categories = [
     {
@@ -31,12 +32,12 @@ export default class extends React.Component {
     render() {
         const { style, className, id } = this.props
         return (
-            <div style={style} className={`${styles.sidebar} ${className}`} id={id}>
-                <div className={styles.sidebarHeader}>
+            <div style={style} className={`${classes.sidebar} ${className}`} id={id}>
+                <div className={classes.sidebarHeader}>
                     <img src="logo-happy-house2.png" />
                 </div>
                 <Divider />
-                <div className={styles.sidebarContent}>
+                <div className={classes.sidebarContent}>
                     {categories.map(({ id, children }, _, arr) => (
                         <React.Fragment key={id}>
                             {
@@ -47,7 +48,7 @@ export default class extends React.Component {
 
                             {children.map(({ id: childId, to, icon }, idx) => (
                                 <Link to={to}
-                                    className={`${styles.item} ${idx === this.state.activeItemIndex ? styles.itemActive : null}`}
+                                    className={`${classes.item} ${idx === this.state.activeItemIndex ? classes.itemActive : null}`}
                                     onClick={() => this._onClick(idx)}
                                     key={idx}
                                 >{icon} {childId}</Link>
@@ -55,6 +56,9 @@ export default class extends React.Component {
                         </React.Fragment>
                     ))}
                 </div>
+                <Divider />
+                <Select id="select" className={classes.select}/>
+
             </div>
         )
     }
